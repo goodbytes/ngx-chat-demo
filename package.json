@@ -12,7 +12,7 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "~8.2.8",
-    "@angular/cdk": "~8.2.2",
+    "@angular/cdk": "^8.0.2",
     "@angular/common": "~8.2.8",
     "@angular/compiler": "~8.2.8",
     "@angular/core": "~8.2.8",
@@ -21,6 +21,8 @@
     "@angular/platform-browser": "~8.2.8",
     "@angular/platform-browser-dynamic": "~8.2.8",
     "@angular/router": "~8.2.8",
+    "@pazznetwork/ngx-chat": "^0.4.2",
+    "@xmpp/client": "^0.3.0",
     "hammerjs": "^2.0.8",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
