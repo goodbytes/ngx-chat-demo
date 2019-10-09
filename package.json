@@ -24,6 +24,7 @@
     "@pazznetwork/ngx-chat": "^0.4.2",
     "@xmpp/client": "^0.3.0",
     "hammerjs": "^2.0.8",
+    "ngx-materialize": "^6.1.3",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
