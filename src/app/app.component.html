@@ -1,3 +1,57 @@
-<p>Hello world</p>
-<ngx-chat rosterState="shown"></ngx-chat>
+<div class="container">
+  <form class="row col s6">
+      <div class="row form-group col s6">
+          <div>
+              XMPP domain
+              <small>(e.g. jabber.example.com)</small>
+          </div>
+          <div>
+              <input  name="domain" [(ngModel)]="domain" class="form-control col s12" type="text" placeholder="jabber.example.com"/>
+          </div>
+      </div>
 
+      <div class="row form-group col s6">
+          <div>
+              Host Websocket endpoint
+              <small>(e.g. wss://jabber.example.com:5280/websocket)</small>
+          </div>
+          <div>
+              <input name="uri" [(ngModel)]="uri"  class="form-control" type="text" placeholder="wss://jabber.example.com:5280/websocket"/>
+          </div>
+      </div>
+
+      <div class="form-group col s6">
+          <div>
+              JID
+              <small>(e.g. test@jabber.example.com)</small>
+          </div>
+          <div>
+              <input name="jid" [(ngModel)]="jid" class="form-control" type="text" placeholder="test@jabber.example.com"/>
+          </div>
+      </div>
+
+      <div class="form-group col s6">
+          <div>
+              Password
+          </div>
+          <div>
+              <input name="password" [(ngModel)]="password" class="form-control" type="password" placeholder="Password"/>
+          </div>
+      </div>
+
+      <div>
+          <button name="login" class="btn" (click)="onLogin()">Log in</button>
+          <button name="logout"  class="btn" (click)="onLogout()">Log out</button>
+          <button name="register"  class="btn" (click)="onRegister()">Register</button>
+          <button name="reconnect"  class="btn" (click)="onReconnect()">Reconnect</button>
+      </div>
+  </form>
+
+
+  <div>State: {{chatService.state$ | async}} (internal state: {{client.status}})</div>
+
+  <div *ngIf="registrationMessage">
+      <p>{{registrationMessage}}</p>
+  </div>
+</div>
+<ngx-chat rosterState="shown"></ngx-chat>
