@@ -20,6 +20,7 @@ export class AppComponent {
   public uri: string;
   public password: string;
   public jid: string;
+  public contactJID: string;
   public registrationMessage: string;
   public multiUserChatPlugin: MultiUserChatPlugin;
 
@@ -70,5 +71,9 @@ export class AppComponent {
           this.registrationMessage = 'registration failed: ' + e.toString();
           throw e;
       }
-  }
+    }
+
+    onAddContact(){
+      this.chatService.addContact(this.contactJID);
+    }
 }

@@ -1,6 +1,6 @@
 <div class="container">
   <form class="row col s6">
-      <div class="row form-group col s6">
+      <div class="row col s6">
           <div>
               XMPP domain
               <small>(e.g. jabber.example.com)</small>
@@ -10,7 +10,7 @@
           </div>
       </div>
 
-      <div class="row form-group col s6">
+      <div class="row col s6">
           <div>
               Host Websocket endpoint
               <small>(e.g. wss://jabber.example.com:5280/websocket)</small>
@@ -20,7 +20,7 @@
           </div>
       </div>
 
-      <div class="form-group col s6">
+      <div class="row col s6">
           <div>
               JID
               <small>(e.g. test@jabber.example.com)</small>
@@ -30,7 +30,7 @@
           </div>
       </div>
 
-      <div class="form-group col s6">
+      <div class="row col s6">
           <div>
               Password
           </div>
@@ -52,6 +52,15 @@
 
   <div *ngIf="registrationMessage">
       <p>{{registrationMessage}}</p>
+  </div>
+
+  <div class="form-group">
+    <div>
+        <input name="contactJID" [(ngModel)]="contactJID" class="form-control" type="text" placeholder="User JID"/>
+    </div>
+    <div>
+        <button (click)="onAddContact()" class="btn">Add a contact</button> 
+    </div>
   </div>
 </div>
 <ngx-chat rosterState="shown"></ngx-chat>
