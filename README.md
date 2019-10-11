@@ -22,7 +22,7 @@ Then you can create a new project via `ng`, the Angular CLI :
 
 Once the project is created, it should look like this
 
-![](doc/screenshots/capture12.JPG)
+![](doc/screenshots/capture12.jpg)
 
 And if everything went well, you can already run your application with the command.
 
@@ -34,7 +34,7 @@ Here is how your application should look like once run.
 
 After that, you can now install XMPP and NgxChat, and add them to your project. Always from the root of your project, type the command below
 
-    npm install --save @pazznetwork/ngx-chat @xmpp/client@~0.3.0 [@angular/cdk@~8.0.0](mailto:@angular/cdk@~8.0.0)
+    npm install --save @pazznetwork/ngx-chat @xmpp/client@~0.3.0 @angular/cdk@~8.0.0
 
 Some folders will be downloaded and added to the "node_modules" folder which contains all the dependencies for your application including Angular, TypeScript, XMPP and NgxChat source files.
 
