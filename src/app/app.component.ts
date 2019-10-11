@@ -45,7 +45,6 @@ export class AppComponent {
           jid: this.jid,
       };
       localStorage.setItem('data', JSON.stringify(logInRequest));
-      console.log(logInRequest);
       this.chatService.logIn(logInRequest);
     }
 

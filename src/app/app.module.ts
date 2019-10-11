@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { NgxChatModule } from './ngx-chat-imports';
-import {NgxMaterialize} from '@smip/ngx-materialize';
+// import {NgxMaterialize} from '@smip/ngx-materialize';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -12,7 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   ],
   imports: [
     BrowserModule,
-    NgxMaterialize,
+    // NgxMaterialize,
     FormsModule,
     NgxChatModule.forRoot(),
     BrowserAnimationsModule
